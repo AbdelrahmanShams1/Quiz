@@ -1,0 +1,504 @@
+{
+    "settings": {
+      "numQuestions": {
+        "label": "Number of Questions:",
+        "options": [
+          { "value": 5, "text": "5" },
+          { "value": 10, "text": "10" },
+          { "value": 15, "text": "15" },
+          { "value": 20, "text": "20" },
+          { "value": 30, "text": "30" },
+          { "value": 40, "text": "40" },
+          { "value": 50, "text": "50" }
+        ]
+      },
+      "category": {
+        "label": "Select Category:",
+        "options": [
+         
+          { "value": 1, "text": "general knowledge" },
+          { "value": 2, "text": "books" },
+          { "value": 3, "text": "films" },
+          { "value": 4, "text": "music" },
+          { "value": 5, "text": "television" },
+          { "value": 6, "text": "video games" },
+          { "value": 7, "text": "board games" },
+          { "value": 8, "text": "science and nature" },
+          { "value": 9, "text": "computers" },
+          { "value": 10, "text": "mathematics" },
+          { "value": 11, "text": "mythology" },
+          { "value": 12, "text": "sports" },
+          { "value": 13, "text": "geography" },
+          { "value": 14, "text": "history" },
+          { "value": 15, "text": "politics" },
+          { "value": 16, "text": "art" },
+          { "value": 17, "text": "vehicles" }
+        ]
+      },
+      "difficulty": {
+        "label": "Select difficulty:",
+        "options": [
+         
+          { "value": "easy", "text": "easy" },
+          { "value": "medium", "text": "medium" },
+          { "value": "hard", "text": "hard" }
+        ]
+      },
+      "timePerQuestion": {
+        "label": "Select time per question:",
+        "options": [
+          { "value": 10, "text": "10 seconds" },
+          { "value": 15, "text": "15 seconds" },
+          { "value": 20, "text": "20 seconds" },
+          { "value": 25, "text": "25 seconds" },
+          { "value": 30, "text": "30 seconds" },
+          { "value": 60, "text": "60 seconds" }
+        ]
+      }
+    }
+    ,
+    "categories": [
+    {
+      "id": 9,
+      "name": "general knowledge",
+      "questions": {
+        "easy": [
+          {
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin", "Madrid"],
+            "answer": "Paris"
+          },
+          {
+            "question": "What is the largest planet in our solar system?",
+            "options": ["Jupiter", "Earth", "Mars", "Venus"],
+            "answer": "Jupiter"
+          },
+          {
+            "question": "What year did the Titanic sink?",
+            "options": ["1912", "1905", "1920", "1918"],
+            "answer": "1912"
+          },
+          {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+            "answer": "William Shakespeare"
+          },
+          {
+            "question": "What is the currency of Japan?",
+            "options": ["Yen", "Dollar", "Euro", "Pound"],
+            "answer": "Yen"
+          },
+          {
+            "question": "What is the longest river in the world?",
+            "options": ["The Nile", "The Amazon", "The Yangtze", "The Mississippi"],
+            "answer": "The Nile"
+          },
+          {
+            "question": "Who wrote 'Harry Potter'?",
+            "options": ["J.K. Rowling", "Stephen King", "J.R.R. Tolkien", "George R.R. Martin"],
+            "answer": "J.K. Rowling"
+          },
+          {
+            "question": "What is the smallest country in the world?",
+            "options": ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
+            "answer": "Vatican City"
+          },
+          {
+            "question": "What is the largest desert in the world?",
+            "options": ["Sahara", "Arctic", "Gobi", "Kalahari"],
+            "answer": "Sahara"
+          },
+          {
+            "question": "Who developed the theory of evolution?",
+            "options": ["Charles Darwin", "Albert Einstein", "Isaac Newton", "Galileo Galilei"],
+            "answer": "Charles Darwin"
+          },
+          {
+            "question": "Who was the first President of the United States?",
+            "options": ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "John Adams"],
+            "answer": "George Washington"
+          },
+          {
+            "question": "Which country is known as the Land of the Rising Sun?",
+            "options": ["Japan", "China", "India", "Thailand"],
+            "answer": "Japan"
+          },
+          {
+            "question": "Which ocean is the largest?",
+            "options": ["Pacific", "Atlantic", "Indian", "Arctic"],
+            "answer": "Pacific"
+          },
+          {
+            "question": "Which chemical element is known as the 'king of chemicals'?",
+            "options": ["Gold", "Platinum", "Iron", "Helium"],
+            "answer": "Gold"
+          },
+          {
+            "question": "Which is the only metal that is liquid at room temperature?",
+            "options": ["Mercury", "Aluminum", "Iron", "Copper"],
+            "answer": "Mercury"
+          },
+          {
+            "question": "Which famous painter cut off his ear?",
+            "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+            "answer": "Vincent van Gogh"
+          },
+          {
+            "question": "What is the most common color of a school bus?",
+            "options": ["Yellow", "Blue", "Red", "Green"],
+            "answer": "Yellow"
+          },
+          {
+            "question": "Who invented the theory of relativity?",
+            "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
+            "answer": "Albert Einstein"
+          },
+          {
+            "question": "Which famous physicist developed the laws of motion?",
+            "options": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"],
+            "answer": "Isaac Newton"
+          }
+        ],
+        "medium": [
+          {
+            "question": "Who painted the Mona Lisa?",
+            "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+            "answer": "Leonardo da Vinci"
+          },
+          {
+            "question": "Which metal has the chemical symbol 'Au'?",
+            "options": ["Gold", "Silver", "Iron", "Aluminum"],
+            "answer": "Gold"
+          },
+          {
+            "question": "What is the capital of Bhutan?",
+            "options": ["Thimphu", "Kathmandu", "Dhaka", "Colombo"],
+            "answer": "Thimphu"
+          },
+          {
+            "question": "What is the title of the first Harry Potter book?",
+            "options": ["Harry Potter and the Philosopher's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban", "Harry Potter and the Goblet of Fire"],
+            "answer": "Harry Potter and the Philosopher's Stone"
+          },
+          {
+            "question": "Who wrote 'War and Peace'?",
+            "options": ["Leo Tolstoy", "Fyodor Dostoevsky", "Anton Chekhov", "Alexander Pushkin"],
+            "answer": "Leo Tolstoy"
+          },
+          {
+            "question": "What is the rarest blood type?",
+            "options": ["AB negative", "O positive", "A negative", "B positive"],
+            "answer": "AB negative"
+          },
+          {
+            "question": "Which planet is known as the Morning Star?",
+            "options": ["Venus", "Mars", "Mercury", "Jupiter"],
+            "answer": "Venus"
+          },
+          {
+            "question": "What is the scientific name for the fear of spiders?",
+            "options": ["Arachnophobia", "Acrophobia", "Claustrophobia", "Nyctophobia"],
+            "answer": "Arachnophobia"
+          },
+          {
+            "question": "Who wrote 'The Divine Comedy'?",
+            "options": ["Dante Alighieri", "Geoffrey Chaucer", "John Milton", "Homer"],
+            "answer": "Dante Alighieri"
+          },
+          {
+            "question": "What is the original language of 'Don Quixote'?",
+            "options": ["Spanish", "French", "Italian", "Portuguese"],
+            "answer": "Spanish"
+          },
+          {
+            "question": "Which country is known for inventing paper?",
+            "options": ["China", "Greece", "Italy", "Egypt"],
+            "answer": "China"
+          },
+          {
+            "question": "What is the first element in the periodic table?",
+            "options": ["Hydrogen", "Helium", "Oxygen", "Nitrogen"],
+            "answer": "Hydrogen"
+          },
+          {
+            "question": "Who was the first man to walk on the moon?",
+            "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+            "answer": "Neil Armstrong"
+          },
+          {
+            "question": "Who was the author of '1984'?",
+            "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Margaret Atwood"],
+            "answer": "George Orwell"
+          },
+          {
+            "question": "Which animal is known as the 'King of the Jungle'?",
+            "options": ["Lion", "Tiger", "Elephant", "Cheetah"],
+            "answer": "Lion"
+          },
+          {
+            "question": "What is the longest river in Asia?",
+            "options": ["Yangtze", "Mekong", "Ganges", "Indus"],
+            "answer": "Yangtze"
+          },
+          {
+            "question": "Which country is home to the Great Barrier Reef?",
+            "options": ["Australia", "New Zealand", "USA", "South Africa"],
+            "answer": "Australia"
+          }
+        ],
+        "hard": [
+          {
+            "question": "Who developed the theory of general relativity?",
+            "options": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Galileo Galilei"],
+            "answer": "Albert Einstein"
+          },
+          {
+            "question": "What is the smallest country in the world?",
+            "options": ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
+            "answer": "Vatican City"
+          },
+          {
+            "question": "Who wrote 'The Catcher in the Rye'?",
+            "options": ["J.D. Salinger", "Mark Twain", "Harper Lee", "F. Scott Fitzgerald"],
+            "answer": "J.D. Salinger"
+          },
+          {
+            "question": "What is the capital of Bhutan?",
+            "options": ["Thimphu", "Kathmandu", "Dhaka", "Colombo"],
+            "answer": "Thimphu"
+          },
+          {
+            "question": "Who painted 'The Persistence of Memory'?",
+            "options": ["Salvador Dalí", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+            "answer": "Salvador Dalí"
+          },
+          {
+            "question": "What is the currency of South Korea?",
+            "options": ["Won", "Yuan", "Yen", "Ringgit"],
+            "answer": "Won"
+          },
+          {
+            "question": "Which planet is known as the Red Planet?",
+            "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+            "answer": "Mars"
+          },
+          {
+            "question": "Who wrote 'Don Quixote'?",
+            "options": ["Miguel de Cervantes", "Mark Twain", "Charles Dickens", "Herman Melville"],
+            "answer": "Miguel de Cervantes"
+          },
+          {
+            "question": "Which ocean is the largest in the world?",
+            "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Southern Ocean"],
+            "answer": "Pacific Ocean"
+          },
+          {
+            "question": "What is the name of the longest-running Broadway musical?",
+            "options": ["The Phantom of the Opera", "Les Misérables", "Cats", "Chicago"],
+            "answer": "The Phantom of the Opera"
+          },
+          {
+            "question": "Which element is the most abundant in the Earth's crust?",
+            "options": ["Oxygen", "Silicon", "Aluminum", "Iron"],
+            "answer": "Oxygen"
+          },
+          {
+            "question": "What is the capital of Mongolia?",
+            "options": ["Ulaanbaatar", "Astana", "Beijing", "Tashkent"],
+            "answer": "Ulaanbaatar"
+          },
+          {
+            "question": "Who is known as the father of modern physics?",
+            "options": ["Albert Einstein", "Isaac Newton", "Max Planck", "Niels Bohr"],
+            "answer": "Albert Einstein"
+          },
+          {
+            "question": "What is the longest river in Africa?",
+            "options": ["The Nile", "The Congo", "The Niger", "The Zambezi"],
+            "answer": "The Nile"
+          },
+          {
+            "question": "Which country is known for the pyramids?",
+            "options": ["Egypt", "Mexico", "India", "Greece"],
+            "answer": "Egypt"
+          },
+          {
+            "question": "Which scientist is famous for the three laws of motion?",
+            "options": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Galileo Galilei"],
+            "answer": "Isaac Newton"
+          },
+          {
+            "question": "What is the most common gas in the Earth's atmosphere?",
+            "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+            "answer": "Nitrogen"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Books",
+      "questions": {
+        "easy": [
+          {
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "options": ["Harper Lee", "J.K. Rowling", "George Orwell", "F. Scott Fitzgerald"],
+            "answer": "Harper Lee"
+          },
+          {
+            "question": "What is the name of the wizarding school in the Harry Potter series?",
+            "options": ["Hogwarts", "Beauxbatons", "Durmstrang", "Ilvermorny"],
+            "answer": "Hogwarts"
+          },
+          {
+            "question": "Who wrote '1984'?",
+            "options": ["George Orwell", "Aldous Huxley", "Ray Bradbury", "Philip K. Dick"],
+            "answer": "George Orwell"
+          },
+          {
+            "question": "What is the title of the first book in the 'Lord of the Rings' series?",
+            "options": ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "The Hobbit"],
+            "answer": "The Fellowship of the Ring"
+          },
+          {
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "options": ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Charles Dickens"],
+            "answer": "Jane Austen"
+          },
+          {
+            "question": "Which book starts with the line 'Call me Ishmael'?",
+            "options": ["Moby Dick", "The Great Gatsby", "Crime and Punishment", "Pride and Prejudice"],
+            "answer": "Moby Dick"
+          },
+          {
+            "question": "Who wrote 'The Catcher in the Rye'?",
+            "options": ["J.D. Salinger", "Ernest Hemingway", "John Steinbeck", "F. Scott Fitzgerald"],
+            "answer": "J.D. Salinger"
+          },
+          {
+            "question": "What is the name of the main character in 'The Great Gatsby'?",
+            "options": ["Nick Carraway", "Jay Gatsby", "Daisy Buchanan", "Tom Buchanan"],
+            "answer": "Nick Carraway"
+          },
+          {
+            "question": "Which book features a character named Frodo Baggins?",
+            "options": ["The Hobbit", "Harry Potter", "The Chronicles of Narnia", "Lord of the Rings"],
+            "answer": "The Lord of the Rings"
+          },
+          {
+            "question": "Who wrote 'The Hunger Games'?",
+            "options": ["Suzanne Collins", "J.K. Rowling", "Stephen King", "Rick Riordan"],
+            "answer": "Suzanne Collins"
+          }
+        ],
+        "medium": [
+          {
+            "question": "Who wrote 'Brave New World'?",
+            "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Philip K. Dick"],
+            "answer": "Aldous Huxley"
+          },
+          {
+            "question": "What is the main theme of '1984'?",
+            "options": ["Totalitarianism", "Freedom", "Love", "Family"],
+            "answer": "Totalitarianism"
+          },
+          {
+            "question": "Which book was published first?",
+            "options": ["The Great Gatsby", "Moby Dick", "Pride and Prejudice", "The Catcher in the Rye"],
+            "answer": "Pride and Prejudice"
+          },
+          {
+            "question": "Who wrote 'The Book Thief'?",
+            "options": ["Markus Zusak", "John Green", "Stephen King", "J.K. Rowling"],
+            "answer": "Markus Zusak"
+          },
+          {
+            "question": "Which of these books was written by John Steinbeck?",
+            "options": ["Of Mice and Men", "The Grapes of Wrath", "The Old Man and the Sea", "The Catcher in the Rye"],
+            "answer": "The Grapes of Wrath"
+          },
+          {
+            "question": "What is the title of the second book in the 'Hunger Games' series?",
+            "options": ["Catching Fire", "Mockingjay", "The Ballad of Songbirds and Snakes", "The Hunger Games"],
+            "answer": "Catching Fire"
+          },
+          {
+            "question": "Who wrote 'The Picture of Dorian Gray'?",
+            "options": ["Oscar Wilde", "William Shakespeare", "Herman Melville", "Edgar Allan Poe"],
+            "answer": "Oscar Wilde"
+          },
+          {
+            "question": "What is the name of the famous detective in Sherlock Holmes series?",
+            "options": ["Sherlock Holmes", "Hercule Poirot", "Sam Spade", "Philip Marlowe"],
+            "answer": "Sherlock Holmes"
+          },
+          {
+            "question": "Who wrote 'The Da Vinci Code'?",
+            "options": ["Dan Brown", "John Grisham", "J.K. Rowling", "Stephen King"],
+            "answer": "Dan Brown"
+          },
+          {
+            "question": "Which book is set in the fictional land of Narnia?",
+            "options": ["The Lion, the Witch, and the Wardrobe", "The Hobbit", "The Great Gatsby", "1984"],
+            "answer": "The Lion, the Witch, and the Wardrobe"
+          }
+        ],
+        "hard": [
+          {
+            "question": "Who wrote 'Crime and Punishment'?",
+            "options": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Victor Hugo"],
+            "answer": "Fyodor Dostoevsky"
+          },
+          {
+            "question": "What is the title of the first book in the 'Game of Thrones' series?",
+            "options": ["A Game of Thrones", "A Clash of Kings", "A Storm of Swords", "A Dance with Dragons"],
+            "answer": "A Game of Thrones"
+          },
+          {
+            "question": "Who wrote 'The Divine Comedy'?",
+            "options": ["Dante Alighieri", "John Milton", "Geoffrey Chaucer", "William Blake"],
+            "answer": "Dante Alighieri"
+          },
+          {
+            "question": "Which book contains the phrase 'It was the best of times, it was the worst of times'?",
+            "options": ["A Tale of Two Cities", "The Great Gatsby", "Moby Dick", "Pride and Prejudice"],
+            "answer": "A Tale of Two Cities"
+          },
+          {
+            "question": "Who wrote 'The Brothers Karamazov'?",
+            "options": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Nikolai Gogol"],
+            "answer": "Fyodor Dostoevsky"
+          },
+          {
+            "question": "Which of these novels is set during World War I?",
+            "options": ["All Quiet on the Western Front", "The Great Gatsby", "Catch-22", "A Farewell to Arms"],
+            "answer": "All Quiet on the Western Front"
+          },
+          {
+            "question": "Who wrote 'The Sun Also Rises'?",
+            "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "John Steinbeck", "Mark Twain"],
+            "answer": "Ernest Hemingway"
+          },
+          {
+            "question": "What is the title of the second book in the 'Lord of the Rings' series?",
+            "options": ["The Two Towers", "The Fellowship of the Ring", "The Return of the King", "The Hobbit"],
+            "answer": "The Two Towers"
+          },
+          {
+            "question": "Who wrote 'The Trial'?",
+            "options": ["Franz Kafka", "George Orwell", "Aldous Huxley", "Markus Zusak"],
+            "answer": "Franz Kafka"
+          },
+          {
+            "question": "Who wrote 'Wuthering Heights'?",
+            "options": ["Emily Brontë", "Charlotte Brontë", "Jane Austen", "Mary Shelley"],
+            "answer": "Emily Brontë"
+          }
+        ]
+      }
+    }
+
+
+  ]
+  }
+  
