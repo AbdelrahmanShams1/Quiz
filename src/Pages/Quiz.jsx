@@ -1,11 +1,11 @@
-import React, { useEffect, useState , useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import AnswerQuiz from "../Components/AnswerQuiz";
 import BTN from "../Components/BTN";
 import { useLocation } from "react-router-dom";
 
 const Quiz = () => {
-  const effectRan = useRef(false)
+  const effectRan = useRef(false);
   const [quiz, setQuiz] = useState(null);
   const [error, setError] = useState(null);
   const [hide, setHide] = useState(true);
@@ -23,31 +23,24 @@ const Quiz = () => {
   const navigate = useNavigate();
   const [navigationTriggered, setNavigationTriggered] = useState(false);
 
-
+  // Update quiz settings based on location.state only once
   useEffect(() => {
-    if (effectRan.current === true || location.state) {
-      console.log(location.state);
-      if (location.state) {
-        if (location.state.timePerQuestion)
-          setTimePerQuestion(location.state.timePerQuestion);
-        if (location.state.difficulty) setDifficulty(location.state.difficulty);
-        if (location.state.numQuestions)
-          setNumberOfQuestions(location.state.numQuestions);
-        if (location.state.category) setCategory(location.state.category);
-      }
-
-    
+    if (!effectRan.current && location.state) {
+      const { timePerQuestion, difficulty, numQuestions, category } =
+        location.state || {};
+      if (timePerQuestion) setTimePerQuestion(timePerQuestion);
+      if (difficulty) setDifficulty(difficulty);
+      if (numQuestions) setNumberOfQuestions(numQuestions);
+      if (category) setCategory(category);
+      effectRan.current = true;
     }
     return () => {
-      console.log('unmounted')
-      effectRan.current = true
-    }
-  }, [location.state])
-  
+      console.log("Unmounted Quiz component");
+    };
+  }, [location.state]);
 
+  // Fetch quiz data when settings change
   useEffect(() => {
-    setTime(timePerQuestion);
-
     const fetchQuiz = async () => {
       const apiURL = "http://localhost:5000/categories";
       try {
@@ -63,6 +56,7 @@ const Quiz = () => {
     fetchQuiz();
   }, [timePerQuestion, difficulty, numberOfQuestions, category]);
 
+  // Timer for each question
   useEffect(() => {
     const timer = setInterval(() => {
       setTime((prevTime) => {
@@ -79,6 +73,7 @@ const Quiz = () => {
     return () => clearInterval(timer);
   }, [currentQuestionIndex]);
 
+  // Handle answer submission
   const handleSubmit = () => {
     setTime(0);
     setAfterSubmit(true);
@@ -97,12 +92,18 @@ const Quiz = () => {
     }
   };
 
+  // Handle moving to the next question
   const handleNextQuestion = () => {
     if (currentQuestionIndex === questions.length - 1) {
-      // منع التنقل المتكرر
       if (!navigationTriggered) {
-        setNavigationTriggered(true); // ضبط حالة التنقل
-        navigate("/result", { state: { trueAnswers: TrueAnswers } });
+        setNavigationTriggered(true);
+        // console.log(TrueAnswers);
+
+        // navigate("/result", {
+        //   state: {
+        //     trueAnswers: TrueAnswers,
+        //   },
+        // });
       }
     } else {
       setSelectedAnswerIndex(null);
@@ -114,13 +115,17 @@ const Quiz = () => {
     }
   };
 
+  // Handle selecting an answer
   const selection = (index) => {
     setSelectedAnswerIndex(index);
   };
 
-  const questions = quiz?.[category-1]?.questions?.[difficulty].slice(0, numberOfQuestions) || [];
+  const getTrueAnswers = () => {};
+
+  const questions =
+    quiz?.[category - 1]?.questions?.[difficulty].slice(0, numberOfQuestions) ||
+    [];
   const currentQuestion = questions[currentQuestionIndex];
-  console.log(questions);
 
   return (
     <div className="bg-slate-100 min-h-screen flex items-center justify-center">
@@ -211,6 +216,7 @@ const Quiz = () => {
             li={
               currentQuestionIndex === questions.length - 1 ? "result" : "quiz"
             }
+            state={{ trueAnswers: TrueAnswers }}
             hide1={hide}
           />
         </section>
